@@ -1,0 +1,43 @@
+.linechart {
+	height: 25%;
+	width: 37.8%;
+	margin: auto;
+    position: absolute;
+    left: 390px;
+    top: 15px;
+}
+
+.barchart {
+	height: 25%;
+	width: 38%;
+	margin: auto;
+    position: absolute;
+    left: 1040px;
+    top: 15px;
+}
+
+body {
+	background-color: #fff9e6; /*#ffe4e1;*/
+	color: #333333;
+	font-family: Georgia, Serif;
+}
+
+table {
+	position: absolute;
+    top: 350px;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 50em) {
+    .linechart, .barchart, body {
+        float: none;
+		display: block;
+    }	
+}

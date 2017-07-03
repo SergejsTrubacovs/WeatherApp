@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>A00212878 Assignment 1</title>
+		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+		<script src="data.js"></script>
+	</head>
+<body>
+	<header>
+		<h1>Weather in <span id="SearchResult"></span></h1>
+	</header>
+    
+	<label>Enter city name: </label>
+	<input type="text" id="city"/>
+	<button id ="searchButton">Search</button>
+	<h3><b>Country: </b><span id="CountryData"></span></h3>
+			Sunrise: <span id="SunriseData"></span>
+			<br>
+			Sunset: <span id="SunsetData"></span>
+			<h3><b>Coordinates: </b></h3>
+			Longitude: <span id="LongitudeData"></span>
+			<br>
+			Latitude: <span id="LatitudeData"></span>
+			<br>			
+	<h3><b>Week forecast: </b></h3>
+	<table>
+		<tr>
+			<th>Date</th>
+			<th>Symbol</th>
+			<th>Precipitation, mm</th>
+			<th>Wind Direction</th>	
+			<th>Wind Speed</th>		
+			<th>Temperature,°C</th>
+			<th>Pressure, hPa</th>
+			<th>Humidity, %</th>
+			<th>Clouds</th>
+		</tr>
+		<tbody id="TableData"></tbody>
+	</table>
+	<div class="linechart">
+		<div>
+			<canvas id="lineChart"></canvas>
+		</div>
+	</div>
+	<div class="barchart">
+		<div>
+			<canvas id="barChart"></canvas>
+		</div>
+	</div>
+</body>
+</html>
